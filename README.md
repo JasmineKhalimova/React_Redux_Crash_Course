@@ -20,3 +20,9 @@ inside components folder create 2 files
 
 hint* use extention tab rcc gives you class based commponent or rcf tab  gives funtional commponent(ES7 React/Redux/GraphQL/React-Native snippets).
 
+step 3 In Posts.js create your component.
+
+Make request to API to fetch the Post using life-cycle method componentWillMount()
+
+Hint* we are using fake API from http://jsonplaceholder.typicode.com/posts
+
