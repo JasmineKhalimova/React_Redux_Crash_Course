@@ -1,22 +1,27 @@
 import React from 'react';
 import logo from './logo.svg';
 import './App.css';
+import{Provider} from 'react-redux';
 
 import Posts from './components/Posts';
 import PostForm from './components/Postform';
+import store from './store';
+
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-      </header>
-      {/* Linging the PostForm File */}
-      <PostForm />
-      <hr />
-      {/* Linging the Posts File */}
-      <Posts /> 
-    </div>
+    <Provider store={store}>
+      <div className="App">
+        <header className="App-header">
+          <img src={logo} className="App-logo" alt="logo" />
+        </header>
+        {/* Linkinging the PostForm File */}
+        <PostForm />
+        <hr />
+        {/* Linking the Posts File */}
+        <Posts /> 
+      </div>
+    </Provider>
   );
 }
 

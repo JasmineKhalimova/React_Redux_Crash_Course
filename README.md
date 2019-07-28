@@ -26,3 +26,17 @@ Make request to API to fetch the Post using life-cycle method componentWillMount
 
 Hint* we are using fake API from http://jsonplaceholder.typicode.com/posts
 
+Step 4. PostForm.js create your component and form. 
+
+Step 5. Install Redux libary 
+
+npm i redux react-redux redux-thunk
+
+after instilattion import it to App.js 
+import{Provider} from 'react-redux'; // glue for react and redux
+
+Step 6. Store is not defined.
+
+Need to create store
+
+const store = createStore(() => [],{}, applyMiddleware()); 
